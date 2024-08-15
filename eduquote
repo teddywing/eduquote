@@ -1,8 +1,70 @@
 #!/usr/bin/env perl
 
+=head1 NAME
+
+eduquote - Convert straight quotes to typographer's quotes
+
+=head1 SYNOPSIS
+
+eduquote [options] [file...]
+
+Options:
+
+  -h, --help    print help
+  -V, --version show the program version
+
+=head1 DESCRIPTION
+
+Convert straight quotes in the input into typographer's quotes. If no file
+argument is given, reads from standard input.
+
+Assumes UTF-8.
+
+=head1 OPTIONS
+
+=over 8
+
+=item -h, --help
+
+Print usage help.
+
+=item -V, --version
+
+Print the program version.
+
+=back
+
+=cut
+
+
 use strict;
 use warnings;
 use v5.10;
+
+use Getopt::Long;
+use Pod::Usage;
+
+use constant {
+	VERSION => '0.0.1',
+};
+
+my $opt_help = 0;
+my $opt_version = 0;
+
+GetOptions(
+	'h|help' => \$opt_help,
+	'V|version' => \$opt_version,
+)
+	or die('argument error');
+
+if ($opt_help) {
+	pod2usage(-verbose => 0, -exitval => 0);
+}
+
+if ($opt_version) {
+	say VERSION;
+	exit;
+}
 
 while (<<>>) {
 	my $line = $_;
