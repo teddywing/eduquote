@@ -28,7 +28,7 @@ use Bin qw($BIN);
 
 my $input = q{
 It was all very well to say 'Drink me,' but the wise little Alice was
-not going to do THAT in a hurry. 'No, I’ll look first,' she said, 'and
+not going to do THAT in a hurry. 'No, I'll look first,' she said, 'and
 see whether it's marked "poison" or not'; for she had read several nice
 little histories about children who had got burnt, and eaten up by wild
 beasts and other unpleasant things, all because they WOULD not remember

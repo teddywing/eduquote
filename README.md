@@ -9,7 +9,7 @@ argument is given, reads from standard input.
 
 	$ cat <<EOF | eduquote
 	> It was all very well to say 'Drink me,' but the wise little Alice was
-	> not going to do THAT in a hurry. 'No, I’ll look first,' she said, 'and
+	> not going to do THAT in a hurry. 'No, I'll look first,' she said, 'and
 	> see whether it's marked "poison" or not'; for she had read several nice
 	> EOF
 	It was all very well to say ‘Drink me,’ but the wise little Alice was
